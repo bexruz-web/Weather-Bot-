@@ -1,10 +1,10 @@
 import requests
 from bs4 import BeautifulSoup as BS
-from config import URl
+from config import URL
 
 def get_all_regions():
 
-    response = requests.get(URl)
+    response = requests.get(URL)
     soup = BS(response.content, 'html.parser')
 
     regions = []
